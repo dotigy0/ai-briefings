@@ -22,3 +22,13 @@ title: Dongwan's AI Briefings
     </li>
   {% endfor %}
 </ul>
+
+<h1>📅 Weekly Briefings</h1>
+<ul>
+  {% for post in site.categories.weekly %}
+    <li>
+      {{ post.date | date: "%Y-%m-%d" }} —
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
